@@ -4,7 +4,7 @@ import tweepy
 import random
 import os
 from credentials import *
-from config import LINK_PATH
+from config import LINK_PATH, STATIC_HASHTAG1, STATIC_HASHTAG2
 
 # Authenticate to Twitter
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -15,5 +15,5 @@ api = tweepy.API(auth)
 
 # Create a tweet
 messages = open(LINK_PATH).read().splitlines()
-message = random.choice(messages)
+message = ' '.join(['STATIC_HASHTAG1','STATIC_HASHTAG2',random.choice(messages),random.choice(messages),random.choice(messages),random.choice(messages)])
 api.update_status(status=message)
