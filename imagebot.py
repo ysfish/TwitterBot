@@ -15,7 +15,7 @@ api = tweepy.API(auth)
 
 # Create a tweet
 messages = open(TWEET_PATH).read().splitlines()
-message = random.choice(messages)
+message = ' '.join(['STATIC_HASHTAG1','STATIC_HASHTAG2',random.choice(messages),random.choice(messages),random.choice(messages)])
 photo = random.choice(os.listdir(IMAGE_PATH))
 filename = os.path.join(IMAGE_PATH, photo)
 media = api.media_upload(filename)
