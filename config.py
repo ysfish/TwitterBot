@@ -33,3 +33,10 @@ FOLLOW = True
 # get banned.
 
 SLEEP_TIME = 300
+
+# STATIC_HASHTAG1 and STATIC_HASHTAG2 will be
+# Tweeted with every message.
+
+STATIC_HASHTAG1 = '#EverRise'
+
+STATIC_HASHTAG2 = '#LetUsIn'
