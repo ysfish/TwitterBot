@@ -4,7 +4,7 @@ import tweepy
 import random
 import os
 from credentials import *
-from config import TWEET_PATH, IMAGE_PATH
+from config import TWEET_PATH, IMAGE_PATH, STATIC_HASHTAG1, STATIC_HASHTAG2
 
 # Authenticate to Twitter
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
